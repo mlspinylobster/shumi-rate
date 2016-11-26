@@ -1,0 +1,23 @@
+{
+  "name": "shumi-rate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "browser-sync start -s --https --port 8000 --files **/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlspinylobster/shumi-rate.git"
+  },
+  "author": "ちーむご",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlspinylobster/shumi-rate/issues"
+  },
+  "homepage": "https://github.com/mlspinylobster/shumi-rate#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "eslint": "^3.11.0"
+  }
+}
