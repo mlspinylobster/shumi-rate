@@ -6,7 +6,12 @@
         <title>趣味rate　趣味を生活の潤いに</title>
         <link href="css/cssreset-min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="//unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+        <script src="//unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-min.js"></script>
+        <script src="js/models.js"></script>
+        <script src="js/viewModels.js"></script>
+        <script src="js/app.js"></script>
     </head>
     <body>
         <header>
@@ -14,10 +19,10 @@
         </header>
 
         <article id="top-search">
-            <section id="top-select">
+            <section id="top-select" data-bind="with: search">
                 <p class="what-hobby">あなたの趣味はなにですか？</p>
-                <form action="">
-                    <select id="hobby" name="hobby">
+                <form action="#" data-bind="submit: onSearch">
+                    <select id="hobby" name="hobby" data-bind="value: selectedHobby">
                         <option value="1">野球</option>
                         <option value="2">バスケット</option>
                         <option value="3">釣り</option>
@@ -72,7 +77,7 @@
                     <img src="img/info-shop.svg" alt="ショップ">
                 </section>
             </section>
-            <section id="map"></section>
+            <div id="map"></div>
         </article>
 
         <article id="contents">
