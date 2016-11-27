@@ -1,0 +1,43 @@
+header{
+  width: 1000px;
+  margin: 1.5rem auto 0 auto;
+}
+
+header h1{
+  text-align: center;
+}
+
+#top-search{
+  width: 1000px;
+  margin: 8rem auto 0 auto;
+}
+
+p.to-cach label{
+  margin: 0 auto;
+  font-size: 1.5rem;
+  text-align:center;
+  color: #4D4D4D;
+}
+
+p.to-cach option{
+  margin: 0 auto;
+  font-size: 1.5rem;
+  text-align:center;
+  color: #4D4D4D;
+}
+
+#cityinfo{
+  width: 1000px;
+  margin: 8rem auto 0 auto;
+}
+
+#cityinfo h2{
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #4D4D4D;
+}
+
+#cityinfo-box{
+  display: -webkit-flex;
+    display: flex;
+}
